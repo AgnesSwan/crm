@@ -4,13 +4,17 @@ import { useForm, Controller } from "react-hook-form"
 import Select from "react-select"
 import { Gdansk, Gdynia, Sopot } from "./District"
 import client from '../assets/client.jpg'
+import { useHistory } from "react-router-dom";
 
 const ClientForm = () => {
+    const history = useHistory()
     const { register, control, handleSubmit } = useForm()
-    const onSubmit = (data) => {
-        console.log(data)
+    const onSubmit = async (data) => {
+          fetch('http://localhost:5000/clients', {
+            method: 'POST',
+            headers: {"Content-type": "application/json"},
+            body: JSON.stringify(data)}).then(()=>history.push('/'))
     }
-
     const theme = (theme) => ({
         ...theme,
         width: '100%',
@@ -101,9 +105,9 @@ const ClientForm = () => {
                         </span>
                     </div>
                     <span className="w-full flex flex-row items-center">
-                        <input type="checkbox" id="mieszkanie" value="Mieszkanie" {...register("city")} />
+                        <input type="checkbox" id="mieszkanie" value="Mieszkanie" {...register("homeType")} />
                         <label className="mx-4" htmlFor="mieszkanie">Mieszkanie</label>
-                        <input type="checkbox" id="dom" value="Mieszkanie" {...register("city")} />
+                        <input type="checkbox" id="dom" value="Dom" {...register("homeType")} />
                         <label className="mx-4" htmlFor="dom">Dom</label>
                         <Controller
                             control={control}

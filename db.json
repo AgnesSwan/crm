@@ -1,0 +1,49 @@
+{
+  "clients": [
+    {
+      "name": "Agnieszka Szmidtke",
+      "phone": "",
+      "city": [
+        "Sopot"
+      ],
+      "homeType": [
+        "Dom"
+      ],
+      "floor": "",
+      "metric": "",
+      "price": "",
+      "comment": "",
+      "District - Sopot": [
+        {
+          "value": "2",
+          "label": "Dolny Sopot"
+        },
+        {
+          "value": "5",
+          "label": "Karlikowo"
+        }
+      ],
+      "Ilość pokoi": [
+        {
+          "id": 3,
+          "label": "3"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Agnieszka Szmidtke",
+      "phone": "",
+      "city": false,
+      "homeType": false,
+      "floor": "",
+      "metric": "",
+      "price": "",
+      "comment": "",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
