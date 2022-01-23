@@ -39,8 +39,8 @@ const ClientForm = () => {
             { id: 5, label: "5 i więcej" },
         ]
     return (
-        <div className="flex flex-row w-full">
-            <div className="flex flex-col w-6/12 items-center justify-center h-screen">
+        <div className="flex flex-row w-full ">
+            <div className="mt-12 flex flex-col w-6/12 items-center justify-center h-screen">
                 <h1 className="text-3xl mb-4">Dane klienta</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-1/2">
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Imię i nazwisko" {...register("name")} />
@@ -51,7 +51,7 @@ const ClientForm = () => {
                             <label className="p-4 w-24" htmlFor="Gda">Gdańsk</label>
                             <Controller
                                 control={control}
-                                name="District - Gdansk"
+                                name="districtGdansk"
                                 render={({ field: { onChange, value } }) => (
                                     <div className="w-11/12">
                                         <Select
@@ -70,7 +70,7 @@ const ClientForm = () => {
                             <label className="p-4 w-24" htmlFor="Sopot">Sopot</label>
                             <Controller
                                 control={control}
-                                name="District - Sopot"
+                                name="districtSopot"
                                 render={({ field: { onChange, value } }) => (
                                     <div className="w-11/12">
                                         <Select
@@ -89,7 +89,7 @@ const ClientForm = () => {
                             <label className="p-4 w-24" htmlFor="Ga">Gdynia</label>
                             <Controller
                                 control={control}
-                                name="District - Gdynia"
+                                name="districtGdynia"
                                 render={({ field: { onChange, value } }) => (
                                     <div className="w-11/12">
                                         <Select
@@ -111,7 +111,7 @@ const ClientForm = () => {
                         <label className="mx-4" htmlFor="dom">Dom</label>
                         <Controller
                             control={control}
-                            name="Ilość pokoi"
+                            name="iloscPokoi"
                             render={({ field: { onChange, value } }) => (
                                 <div className="w-10/12">
                                     <Select

@@ -4,7 +4,7 @@ import ListOfHouses from './ListOfHouses'
 
 const FindPerfectHouse = () => {
 return (
-    <div className="w-full flex flex-row">
+    <div className="w-full flex flex-row mt-8">
     <ListOfClients />
     <ListOfHouses />
     </div>

@@ -13,7 +13,7 @@
       "metric": "",
       "price": "",
       "comment": "",
-      "District - Sopot": [
+      "districtSopot": [
         {
           "value": "2",
           "label": "Dolny Sopot"
@@ -34,13 +34,32 @@
     {
       "name": "Agnieszka Szmidtke",
       "phone": "",
-      "city": false,
+      "city": [
+        "Sopot"
+      ],
       "homeType": false,
       "floor": "",
       "metric": "",
       "price": "",
       "comment": "",
       "id": 2
+    }
+  ],
+  "houses": [
+    {
+      "title": "Mieszkanie",
+      "name": "Jan Kowalski",
+      "phone": "",
+      "street": "Jana z Kolna 11",
+      "city": [
+        "Gdańsk"
+      ],
+      "homeType": false,
+      "floor": "",
+      "metric": "40",
+      "price": "500000",
+      "comment": "",
+      "id": 1
     }
   ],
   "profile": {
