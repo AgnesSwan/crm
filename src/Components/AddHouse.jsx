@@ -46,7 +46,7 @@ const AddHouse = () => {
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Tytul ogloszenia" {...register("title")} />
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Imię i nazwisko właściciela" {...register("name")} />
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="phone" placeholder="Telefon" {...register("phone")} />
-                    <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="phone" placeholder="Ulica, nr mieszkania" {...register("street")} />
+                    <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Ulica, nr mieszkania" {...register("street")} />
                     <div className="flex flex-col w-full text-left">
                         <span className="flex flex-row w-full items-center">
                             <input type="checkbox" id="Gda" value="Gdańsk" {...register("city")} className="checked:bg-blue-600 checked:rounded border ..." />
@@ -107,9 +107,9 @@ const AddHouse = () => {
                         </span>
                     </div>
                     <span className="w-full flex flex-row items-center">
-                        <input type="checkbox" id="mieszkanie" value="Mieszkanie" {...register("homeType")} />
+                        <input type="checkbox" id="mieszkanie" value="mieszkanie" {...register("homeType")} />
                         <label className="mx-4" htmlFor="mieszkanie">Mieszkanie</label>
-                        <input type="checkbox" id="dom" value="Dom" {...register("homeType")} />
+                        <input type="checkbox" id="dom" value="dom" {...register("homeType")} />
                         <label className="mx-4" htmlFor="dom">Dom</label>
                         <Controller
                             control={control}
@@ -118,7 +118,6 @@ const AddHouse = () => {
                                 <div className="w-10/12">
                                     <Select
                                         onChange={onChange}
-                                        isMulti
                                         options={pokoje}
                                         selected={value}
                                     />

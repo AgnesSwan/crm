@@ -43,6 +43,118 @@
       "price": "",
       "comment": "",
       "id": 2
+    },
+    {
+      "name": "Jan Kowalski",
+      "phone": "567678876",
+      "email": "jan@wp.pl",
+      "clientType": [
+        "Kupujacy"
+      ],
+      "city": [
+        "Gdańsk"
+      ],
+      "homeType": [
+        "Mieszkanie"
+      ],
+      "floor": "",
+      "metric": "",
+      "price": "850000",
+      "comment": "Azsxdfcvghbknjl azsdxfcgvhbjn asedrftgyhujik",
+      "districtGdansk": [
+        {
+          "value": "1",
+          "label": "Aniołki"
+        },
+        {
+          "value": "5",
+          "label": "Jasień"
+        },
+        {
+          "value": "2",
+          "label": "Brętowo"
+        }
+      ],
+      "iloscPokoi": [
+        {
+          "id": 3,
+          "label": "3"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Jan Kowalski",
+      "phone": "456765567",
+      "email": "jan@wp.pl",
+      "clientType": [
+        "buyer"
+      ],
+      "city": [
+        "Gdańsk"
+      ],
+      "homeType": [
+        "Mieszkanie"
+      ],
+      "floor": "",
+      "metric": "",
+      "price": "850000",
+      "comment": "",
+      "districtGdansk": [
+        {
+          "value": "2",
+          "label": "Brętowo"
+        },
+        {
+          "value": "6",
+          "label": "Kokoszki"
+        }
+      ],
+      "iloscPokoi": {
+        "id": 3,
+        "label": "3"
+      },
+      "id": 4
+    },
+    {
+      "name": "Janina Nowak",
+      "phone": "567567567",
+      "email": "nowak@wp.pl",
+      "clientType": [
+        "buyer"
+      ],
+      "city": [
+        "Gdańsk",
+        "Sopot"
+      ],
+      "homeType": [
+        "Mieszkanie"
+      ],
+      "floor": "3",
+      "metric": "",
+      "price": "450000",
+      "comment": "xdfcgvhbjn drftgyhuji sdrftgyhuij",
+      "districtGdansk": [
+        {
+          "value": "1",
+          "label": "Aniołki"
+        }
+      ],
+      "districtSopot": [
+        {
+          "value": "1",
+          "label": "Brodwino"
+        },
+        {
+          "value": "4",
+          "label": "Kamienny Potok"
+        }
+      ],
+      "iloscPokoi": {
+        "id": 2,
+        "label": "2"
+      },
+      "id": 5
     }
   ],
   "houses": [
@@ -60,6 +172,32 @@
       "price": "500000",
       "comment": "",
       "id": 1
+    },
+    {
+      "title": "Mieszkanie 2-pokojowe",
+      "name": "Janina Nowak",
+      "phone": "567765456",
+      "street": "Norblina 2",
+      "city": [
+        "Gdańsk"
+      ],
+      "homeType": [
+        "mieszkanie"
+      ],
+      "floor": "5",
+      "metric": "54",
+      "price": "600000",
+      "districtGdansk": [
+        {
+          "value": "28",
+          "label": "VII Dwór"
+        }
+      ],
+      "iloscPokoi": {
+        "id": 3,
+        "label": "3"
+      },
+      "id": 2
     }
   ],
   "profile": {

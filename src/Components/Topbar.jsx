@@ -10,12 +10,12 @@ return (
     <div className="flex-1"/>
     
     <li className="w-fit text-lg p-2 hover:text-blue-500">
-        <Link to="/">Find house</Link>
+        <Link to="/">Znajdź mieszkanie</Link>
     </li>
-    <li className="text-lg p-2 hover:text-blue-500 w-fit"><Link  to="/clientForm">Client Form</Link>
+    <li className="text-lg p-2 hover:text-blue-500 w-fit"><Link  to="/clientForm">Nowy klient</Link>
     </li>
         <li className="w-fit text-lg p-2 hover:text-blue-500">
-        <Link to="/addHouse">House Form</Link>
+        <Link to="/addHouse">Nowe mieszkanie</Link>
     </li>
 </ul>
 </nav>

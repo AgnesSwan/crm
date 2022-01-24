@@ -45,6 +45,13 @@ const ClientForm = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-1/2">
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Imię i nazwisko" {...register("name")} />
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="phone" placeholder="Telefon" {...register("phone")} />
+                    <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="E-mail" {...register("email")} />
+                    <div className="flex flex-row items-center">
+                    <input type="checkbox" id="buyer" value="buyer" {...register("clientType")} />
+                        <label className="mx-4" htmlFor="buyer">Kupujący</label>
+                        <input type="checkbox" id="seller" value="seller" {...register("clientType")} />
+                        <label className="mx-4" htmlFor="seller">Sprzedający</label>
+                    </div>
                     <div className="flex flex-col w-full text-left">
                         <span className="flex flex-row w-full items-center">
                             <input type="checkbox" id="Gda" value="Gdańsk" {...register("city")} className="checked:bg-blue-600 checked:rounded border ..." />
@@ -116,7 +123,6 @@ const ClientForm = () => {
                                 <div className="w-10/12">
                                     <Select
                                         onChange={onChange}
-                                        isMulti
                                         options={pokoje}
                                         selected={value}
                                     />
