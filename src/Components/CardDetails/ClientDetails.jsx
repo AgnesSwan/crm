@@ -26,17 +26,17 @@ const ClientDetails = () => {
         </div>
       </div>
       <div class="flex items-center px-6 py-3 bg-gray-900">
-        <AiTwotoneHome className='text-white text-lg'/>
+        <AiTwotoneHome className='text-white text-lg' />
         <h1 class="mx-3 text-white font-semibold text-lg">{client.clientType}</h1>
       </div>
       <div class="py-4 px-6">
-          <div className='flex flex-row'> {client.city?.map(c=> <p className="mr-2 text-sm border border-sky-500 w-14 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{c}</p>)}</div> 
-          <div className='flex flex-row'> {client.homeType?.map(ht=> <p className="mr-2 mt-2 text-sm border border-sky-500 w-32 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{ht}</p>)}</div> 
-         
-          {client.iloscPokoi?.label && <p className=" mt-2 text-sm border border-sky-500 w-16 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{client.iloscPokoi.label} pokoje</p>}
-          {client.floor && <p className=" mt-2 text-sm border border-sky-500 w-16 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{client.floor} piętro</p>}
-          <span className='flex flex-row items-center mt-2 mr-2'>Górna granica cenowa: {client.price && <p className="  text-sm border border-sky-500 w-24 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{client.price} PLN</p>}</span>
-          {client.comment&& <div className='mt-2 text-sm border border-sky-500 w-1/4 h-32 rounded bg-gray-100 opacity-70 flex wrap p-4'>{client.comment}</div>}
+        <div className='flex flex-row'> {client.city?.map(c => <p className="mr-2 text-sm border border-sky-500 w-14 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{c}</p>)}</div>
+        <div className='flex flex-row'> {client.homeType?.map(ht => <p className="mr-2 mt-2 text-sm border border-sky-500 w-32 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{ht}</p>)}</div>
+
+        {client.iloscPokoi?.label && <p className=" mt-2 text-sm border border-sky-500 w-16 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{client.iloscPokoi.label} pokoje</p>}
+        {client.floor && <p className=" mt-2 text-sm border border-sky-500 w-16 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{client.floor} piętro</p>}
+        <span className='flex flex-row items-center mt-2 mr-2'>Górna granica cenowa: {client.price && <p className="  text-sm border border-sky-500 w-24 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{client.price} PLN</p>}</span>
+        {client.comment && <div className='mt-2 text-sm border border-sky-500 w-1/4 h-32 rounded bg-gray-100 opacity-70 flex wrap p-4'>{client.comment}</div>}
       </div>
     </div>
 

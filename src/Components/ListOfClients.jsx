@@ -25,7 +25,6 @@ const ListOfClients = () => {
                         <h1 className="text-blue-500 ">{(client.phone).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</h1>
                         <h1 className="text-blue-500 ">{client.email}</h1>
                     </div>
-
                 </li>
             )}
         </ul>
