@@ -19,9 +19,9 @@ const HouseDetails = () => {
       <div className='flex flex-row'>
         <img class="w-1/4 h-56 object-cover object-center" src={home} alt="avatar" />
         <div className='flex flex-col ml-4 mt-8'>
-          <h1 class="text-2xl font-semibold text-gray-800">{house.title}</h1>
-          <p class="py-2 text-lg text-gray-700">Właściciel: {house.name}</p>
-          <p class="py-2 text-lg text-gray-700">Tel: {(house.phone)?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "-")}</p>
+         {house.title && <h1 class="text-2xl font-semibold text-gray-800">{house.title}</h1>}
+         {house.name && <p class="py-2 text-lg text-gray-700">Właściciel: {house.name}</p>}
+         {house.phone && <p class="py-2 text-lg text-gray-700">Tel: {(house.phone)?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "-")}</p>}
         </div>
       </div>
       <div class="flex items-center px-6 py-3 bg-gray-900">
@@ -43,7 +43,7 @@ const HouseDetails = () => {
 
           </div>
           {house.floor && <p className=" mt-2 text-sm border border-sky-500 w-16 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{house.floor} piętro</p>}
-          <span className='flex flex-row items-center mt-2 mr-2'>Cena: {house.price && <p className="  text-sm border border-sky-500 w-24 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{house.price} PLN</p>}</span>
+        { house.price && <span className='flex flex-row items-center mt-2 mr-2'>Cena: {house.price && <p className="  text-sm border border-sky-500 w-24 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{house.price} PLN</p>}</span>}
         </div>
       </div>
     </div>
