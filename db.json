@@ -1,50 +1,6 @@
 {
   "clients": [
     {
-      "name": "Agnieszka Szmidtke",
-      "phone": "",
-      "city": [
-        "Sopot"
-      ],
-      "homeType": [
-        "Dom"
-      ],
-      "floor": "",
-      "metric": "",
-      "price": "",
-      "comment": "",
-      "districtSopot": [
-        {
-          "value": "2",
-          "label": "Dolny Sopot"
-        },
-        {
-          "value": "5",
-          "label": "Karlikowo"
-        }
-      ],
-      "Ilość pokoi": [
-        {
-          "id": 3,
-          "label": "3"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "name": "Agnieszka Szmidtke",
-      "phone": "",
-      "city": [
-        "Sopot"
-      ],
-      "homeType": false,
-      "floor": "",
-      "metric": "",
-      "price": "",
-      "comment": "",
-      "id": 2
-    },
-    {
       "name": "Jan Kowalski",
       "phone": "567678876",
       "email": "jan@wp.pl",
