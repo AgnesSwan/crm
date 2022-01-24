@@ -42,7 +42,7 @@ const AddHouse = () => {
     return (
         <div className="flex flex-row w-full">
             <img src={house} alt='house' className="w-6/12 h-fit opacity-80" />
-            <div className="mt-8 flex flex-col w-6/12 items-center justify-center h-screen">
+            <div className="mt-14 flex flex-col w-6/12 items-center justify-center h-screen">
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-1/2">
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Tytul ogloszenia" {...register("title")} />
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Imię i nazwisko właściciela" {...register("name")} />

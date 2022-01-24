@@ -41,7 +41,7 @@ const ClientForm = () => {
         ]
     return (
         <div className="flex flex-row w-full ">
-            <div className="mt-12 flex flex-col w-6/12 items-center justify-center h-screen">
+            <div className="mt-28 flex flex-col w-6/12 items-center justify-center h-screen">
                 <h1 className="text-3xl mb-4">Dane klienta</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-1/2">
                     <input className="my-2 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-100" type="text" placeholder="Imię i nazwisko" {...register("name")} />
@@ -138,7 +138,7 @@ const ClientForm = () => {
                     <input className="bg-blue-100 p-2 border rounded cursor-pointer hover:bg-white hover:text-blue-200" type="submit" />
                 </form>
             </div>
-            <img src={client} className="w-6/12 h-screen opacity-80" alt="client" />
+            <img src={client} className="w-6/12 h-fit opacity-80" alt="client" />
         </div>
     )
 }
