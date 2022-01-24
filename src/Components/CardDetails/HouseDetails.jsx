@@ -37,7 +37,7 @@ const HouseDetails = () => {
           
           </div>
           <div className='flex flex-row'>
-            {house.homeType?.map(ht => <p className="mr-2 mt-2 text-sm border border-sky-500 w-32 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{ht}</p>)}
+            {house.homeType && house.homeType.map(ht => <p className="mr-2 mt-2 text-sm border border-sky-500 w-32 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{ht}</p>)}
             {house.iloscPokoi?.label && <p className=" mt-2 text-sm border border-sky-500 w-16 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center mr-2">{house.iloscPokoi.label} pokoje</p>}
             {house.metric && <p className=" mt-2 text-sm border border-sky-500 w-16 h-6 rounded bg-gray-100 opacity-70 flex items-center justify-center">{house.metric} m2</p>}
           
